@@ -21,7 +21,7 @@
                 <a class="nav-link active text-dark" href="shop.html">Shop</a>
             </li>
             <li class="nav-item pe-4">
-                <a class="nav-link text-dark" href="#about_us">About</a>
+                <a class="nav-link text-dark" href="index.html#about_us">About</a>
             </li>
             <li class="nav-item pe-4">
                 <a class="nav-link text-dark" href="contact.html">Contact</a>
@@ -29,48 +29,24 @@
             <li class="nav-item">
                 <a class="nav-link text-dark" href="cart.html">
                     <i class="fa-solid fa-cart-shopping"></i>
-                    <span id="cartCounter" class="badge bg-danger rounded-pill ms-1">0</span>
+                    <!--  -->
                 </a>
             </li>
         </ul>
     </nav>
 
     <section class="container py-3">
-        <h3 class="text-color mt-5 mb-3">Products</h3>
+         <h3 class="text-color mb-3"> Products</h3>
         <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-3">
             <!-- Product 1 -->
             <div class="col mt-4">
-                <div class="card border-0 product-card h-100">
-                    <div style="height: 180px; overflow: hidden; background: #f7f7f7; border-radius: 8px;">
-                        <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
-                             class="w-100 h-100" style="object-fit: cover;" alt="Silver Necklace">
-                    </div>
-                    <div class="card-body p-3">
-                        <h6 class="card-title mb-2">Minimalist Silver Necklace</h6>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <h6 class="fw-bold text-color mb-0">$120.00</h6>
-                            <button class="btn btn-sm text-orange p-0 add-to-cart" 
-                                    data-id="1"
-                                    data-name="Minimalist Silver Necklace"
-                                    data-price="120.00"
-                                    data-image="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
-                                    data-color="Silver">
-                                <i class="fas fa-cart-plus fs-5"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Product 2 -->
-            <div class="col mt-4">
                 <div class="card card-box h-100 border-1 product-card">
                     <div style="height: 190px; overflow: hidden; background: #f7f7f7;">
-                        <img src="img/necklace.jpeg" class="w-100 h-100" style="object-fit: cover;" alt="Classic Necklace">
+                        <img src="img/earrings.jpeg" class="w-100 h-100" style="object-fit: cover;" alt="Classic Necklace">
                     </div>
                     <div class="card-body py-2 px-3 d-flex flex-column">
                         <h6 class="card-title mb-1" style="height: 40px; overflow: hidden; line-height: 1.1rem;">
-                            Classic Geometric Gold Necklace
+                            Gold Oval Hoop Earrings
                         </h6>
                         <div class="d-flex justify-content-between align-items-center mt-0">
                             <div>
@@ -85,10 +61,44 @@
                             </div>
                             <button class="btn btn-sm text-orange p-0 add-to-cart" 
                                     data-id="2"
-                                    data-name="Classic Geometric Gold Necklace"
+                                    data-name="Gold Oval Hoop Earrings"
                                     data-price="95.00"
+                                    data-image="img/earrings.jpeg"
+                                    data-color="Gold earring">
+                                <i class="fa-solid fa-cart-arrow-down fs-4"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product 2 -->
+            <div class="col mt-4">
+                <div class="card card-box h-100 border-1 product-card">
+                    <div style="height: 190px; overflow: hidden; background: #f7f7f7;">
+                        <img src="img/necklace.jpeg" class="w-100 h-100" style="object-fit: cover;" alt="Classic Necklace">
+                    </div>
+                    <div class="card-body py-2 px-3 d-flex flex-column">
+                        <h6 class="card-title mb-1" style="height: 40px; overflow: hidden; line-height: 1.1rem;">
+                            Long Heart Shaped Pendant Necklace
+                        </h6>
+                        <div class="d-flex justify-content-between align-items-center mt-0">
+                            <div>
+                                <div class="mb-1">
+                                    <i class="fa-solid fa-star text-warning small"></i>
+                                    <i class="fa-solid fa-star text-warning small"></i>
+                                    <i class="fa-solid fa-star text-warning small"></i>
+                                    <i class="fa-solid fa-star text-warning small"></i>
+                                    <i class="fa-solid fa-star text-warning small"></i>
+                                </div>
+                                <h6 class="fw-bold">$80.00</h6>
+                            </div>
+                            <button class="btn btn-sm text-orange p-0 add-to-cart" 
+                                    data-id="2"
+                                    data-name=" Long Heart Shaped Pendant Necklace"
+                                    data-price="80.00"
                                     data-image="img/necklace.jpeg"
-                                    data-color="Gold">
+                                    data-color="Gold necklace">
                                 <i class="fa-solid fa-cart-arrow-down fs-4"></i>
                             </button>
                         </div>
@@ -104,7 +114,7 @@
                     </div>
                     <div class="card-body py-2 px-3 d-flex flex-column">
                         <h6 class="card-title mb-1" style="height: 40px; overflow: hidden; line-height: 1.1rem;">
-                            Diamond Stud Earrings
+                            Sterling Silver Fashion Star Cuff Earring Chain
                         </h6>
                         <div class="d-flex justify-content-between align-items-center mt-0">
                             <div>
@@ -119,7 +129,7 @@
                             </div>
                             <button class="btn btn-sm text-orange p-0 add-to-cart" 
                                     data-id="3"
-                                    data-name="Diamond Stud Earrings"
+                                    data-name="Sterling Silver Fashion Star Cuff Earring Chain"
                                     data-price="65.00"
                                     data-image="img/earrings2.jpeg"
                                     data-color="Silver">
@@ -138,7 +148,7 @@
                     </div>
                     <div class="card-body py-2 px-3 d-flex flex-column">
                         <h6 class="card-title mb-1" style="height: 40px; overflow: hidden; line-height: 1.1rem;">
-                            Layered Pearl Necklace
+                            Sea Shell Locket Necklace with Pearl
                         </h6>
                         <div class="d-flex justify-content-between align-items-center mt-0">
                             <div>
@@ -149,12 +159,12 @@
                                     <i class="fa-solid fa-star text-warning small"></i>
                                     <i class="fa-solid fa-star text-warning small"></i>
                                 </div>
-                                <h6 class="fw-bold">$150.00</h6>
+                                <h6 class="fw-bold">$80.00</h6>
                             </div>
                             <button class="btn btn-sm text-orange p-0 add-to-cart" 
                                     data-id="4"
-                                    data-name="Layered Pearl Necklace"
-                                    data-price="150.00"
+                                    data-name="Sea Shell Locket Necklace with Pearl"
+                                    data-price="80.00"
                                     data-image="img/necklace1.jpeg"
                                     data-color="White">
                                 <i class="fa-solid fa-cart-arrow-down fs-4"></i>
@@ -183,12 +193,12 @@
                                     <i class="fa-solid fa-star text-warning small"></i>
                                     <i class="fa-solid fa-star text-warning small"></i>
                                 </div>
-                                <h6 class="fw-bold">$180.00</h6>
+                                <h6 class="fw-bold">$80.00</h6>
                             </div>
                             <button class="btn btn-sm text-orange p-0 add-to-cart" 
                                     data-id="5"
                                     data-name="Statement Crystal Necklace"
-                                    data-price="180.00"
+                                    data-price="80.00"
                                     data-image="img/necklace2.jpeg"
                                     data-color="Multi">
                                 <i class="fa-solid fa-cart-arrow-down fs-4"></i>
@@ -203,11 +213,11 @@
             <div class="col mt-4">
                 <div class="card card-box h-100 border-1 product-card">
                     <div style="height: 190px; overflow: hidden; background: #f7f7f7;">
-                        <img src="img/necklace2.jpeg" class="w-100 h-100" style="object-fit: cover;" alt="Earrings">
+                        <img src="img/earrings1.jpeg" class="w-100 h-100" style="object-fit: cover;" alt="Earrings">
                     </div>
                     <div class="card-body py-2 px-3 d-flex flex-column">
                         <h6 class="card-title mb-1" style="height: 40px; overflow: hidden; line-height: 1.1rem;">
-                            Gold Hoop Earrings
+                            Gentle Wind Style Pom Pom Earrings
                         </h6>
                         <div class="d-flex justify-content-between align-items-center mt-0">
                             <div>
@@ -218,14 +228,14 @@
                                     <i class="fa-solid fa-star text-warning small"></i>
                                     <i class="fa-solid fa-star text-warning small"></i>
                                 </div>
-                                <h6 class="fw-bold">$75.00</h6>
+                                <h6 class="fw-bold">$50.00</h6>
                             </div>
                             <button class="btn btn-sm text-orange p-0 add-to-cart" 
                                     data-id="6"
-                                    data-name="Gold Hoop Earrings"
-                                    data-price="75.00"
-                                    data-image="img/necklace2.jpeg"
-                                    data-color="Gold">
+                                    data-name="Gentle Wind Style Pom Pom Earrings"
+                                    data-price="50.00"
+                                    data-image="img/earrings1.jpeg"
+                                    data-color="Earrings">
                                 <i class="fa-solid fa-cart-arrow-down fs-4"></i>
                             </button>
                         </div>
@@ -237,11 +247,11 @@
             <div class="col mt-4">
                 <div class="card card-box h-100 border-1 product-card">
                     <div style="height: 190px; overflow: hidden; background: #f7f7f7;">
-                        <img src="img/necklace2.jpeg" class="w-100 h-100" style="object-fit: cover;" alt="Bracelet">
+                        <img src="img/WhatsApp Image 2025-11-02 at 7.30.49 PM.jpeg" class="w-100 h-100" style="object-fit: cover;" alt="Bracelet">
                     </div>
                     <div class="card-body py-2 px-3 d-flex flex-column">
                         <h6 class="card-title mb-1" style="height: 40px; overflow: hidden; line-height: 1.1rem;">
-                            Silver Bangle Bracelet
+                            long Fringe Tulip Flower Earrings
                         </h6>
                         <div class="d-flex justify-content-between align-items-center mt-0">
                             <div>
@@ -256,10 +266,10 @@
                             </div>
                             <button class="btn btn-sm text-orange p-0 add-to-cart" 
                                     data-id="7"
-                                    data-name="Silver Bangle Bracelet"
+                                    data-name="long Fringe Tulip Flower Earrings"
                                     data-price="90.00"
-                                    data-image="img/necklace2.jpeg"
-                                    data-color="Silver">
+                                    data-image="img/WhatsApp Image 2025-11-02 at 7.30.49 PM.jpeg"
+                                    data-color="earrings">
                                 <i class="fa-solid fa-cart-arrow-down fs-4"></i>
                             </button>
                         </div>
@@ -271,11 +281,11 @@
             <div class="col mt-4">
                 <div class="card card-box h-100 border-1 product-card">
                     <div style="height: 190px; overflow: hidden; background: #f7f7f7;">
-                        <img src="img/necklace2.jpeg" class="w-100 h-100" style="object-fit: cover;" alt="Ring">
+                        <img src="img/WhatsApp Image 2025-11-02 at 7.30.54 PM.jpeg" class="w-100 h-100" style="object-fit: cover;" alt="Ring">
                     </div>
                     <div class="card-body py-2 px-3 d-flex flex-column">
                         <h6 class="card-title mb-1" style="height: 40px; overflow: hidden; line-height: 1.1rem;">
-                            Diamond Solitaire Ring
+                            Disney Minnie Mouse Bow Earrings
                         </h6>
                         <div class="d-flex justify-content-between align-items-center mt-0">
                             <div>
@@ -286,14 +296,14 @@
                                     <i class="fa-solid fa-star text-warning small"></i>
                                     <i class="fa-solid fa-star text-warning small"></i>
                                 </div>
-                                <h6 class="fw-bold">$250.00</h6>
+                                <h6 class="fw-bold">$95.00</h6>
                             </div>
                             <button class="btn btn-sm text-orange p-0 add-to-cart" 
                                     data-id="8"
-                                    data-name="Diamond Solitaire Ring"
-                                    data-price="250.00"
-                                    data-image="img/necklace2.jpeg"
-                                    data-color="Platinum">
+                                    data-name="Disney Minnie Mouse Bow Earrings"
+                                    data-price="95.00"
+                                    data-image="img/WhatsApp Image 2025-11-02 at 7.30.54 PM.jpeg"
+                                    data-color="Earring">
                                 <i class="fa-solid fa-cart-arrow-down fs-4"></i>
                             </button>
                         </div>
@@ -305,7 +315,177 @@
             <div class="col mt-4">
                 <div class="card card-box h-100 border-1 product-card">
                     <div style="height: 190px; overflow: hidden; background: #f7f7f7;">
-                        <img src="img/necklace2.jpeg" class="w-100 h-100" style="object-fit: cover;" alt="Earrings">
+                        <img src="img/WhatsApp Image 2025-11-02 at 7.30.55 PM (1).jpeg" class="w-100 h-100" style="object-fit: cover;" alt="Earrings">
+                    </div>
+                    <div class="card-body py-2 px-3 d-flex flex-column">
+                        <h6 class="card-title mb-1" style="height: 40px; overflow: hidden; line-height: 1.1rem;">
+                            Interlined Heart Shaped Pendant Necklace
+                        </h6>
+                        <div class="d-flex justify-content-between align-items-center mt-0">
+                            <div>
+                                <div class="mb-1">
+                                    <i class="fa-solid fa-star text-warning small"></i>
+                                    <i class="fa-solid fa-star text-warning small"></i>
+                                    <i class="fa-solid fa-star text-warning small"></i>
+                                    <i class="fa-solid fa-star text-warning small"></i>
+                                    <i class="fa-solid fa-star text-warning small"></i>
+                                </div>
+                                <h6 class="fw-bold">$90.00</h6>
+                            </div>
+                            <button class="btn btn-sm text-orange p-0 add-to-cart" 
+                                    data-id="9"
+                                    data-name="Interlined Heart Shaped Pendant Necklace"
+                                    data-price="90.00"
+                                    data-image="img/WhatsApp Image 2025-11-02 at 7.30.55 PM (1).jpeg"
+                                    data-color="Necklace">
+                                <i class="fa-solid fa-cart-arrow-down fs-4"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product 10 -->
+            <div class="col mt-4">
+                <div class="card card-box h-100 border-1 product-card">
+                    <div style="height: 190px; overflow: hidden; background: #f7f7f7;">
+                        <img src="img/WhatsApp Image 2025-11-02 at 7.30.55 PM (2).jpeg" class="w-100 h-100" style="object-fit: cover;" alt="Necklace">
+                    </div>
+                    <div class="card-body py-2 px-3 d-flex flex-column">
+                        <h6 class="card-title mb-1" style="height: 40px; overflow: hidden; line-height: 1.1rem;">
+                            Rose Gold Pendant Necklace
+                        </h6>
+                        <div class="d-flex justify-content-between align-items-center mt-0">
+                            <div>
+                                <div class="mb-1">
+                                    <i class="fa-solid fa-star text-warning small"></i>
+                                    <i class="fa-solid fa-star text-warning small"></i>
+                                    <i class="fa-solid fa-star text-warning small"></i>
+                                    <i class="fa-solid fa-star text-warning small"></i>
+                                    <i class="fa-solid fa-star text-warning small"></i>
+                                </div>
+                                <h6 class="fw-bold">$100.00</h6>
+                            </div>
+                            <button class="btn btn-sm text-orange p-0 add-to-cart" 
+                                    data-id="10"
+                                    data-name="Rose Gold Pendant Necklace"
+                                    data-price="100.00"
+                                    data-image="img/necklace2.jpeg"
+                                    data-color="Rose Gold">
+                                <i class="fa-solid fa-cart-arrow-down fs-4"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Continue with other products (11-15) with similar structure -->
+            <!-- Product 11 -->
+            <div class="col mt-4">
+                <div class="card card-box h-100 border-1 product-card">
+                    <div style="height: 190px; overflow: hidden; background: #f7f7f7;">
+                        <img src="img/WhatsApp Image 2025-11-02 at 7.30.57 PM (1).jpeg" class="w-100 h-100" style="object-fit: cover;" alt="Earrings">
+                    </div>
+                    <div class="card-body py-2 px-3 d-flex flex-column">
+                        <h6 class="card-title mb-1" style="height: 40px; overflow: hidden; line-height: 1.1rem;">
+                            Diamond Cluster Pendant Necklace
+                        </h6>
+                        <div class="d-flex justify-content-between align-items-center mt-0">
+                            <div>
+                                <div class="mb-1">
+                                    <i class="fa-solid fa-star text-warning small"></i>
+                                    <i class="fa-solid fa-star text-warning small"></i>
+                                    <i class="fa-solid fa-star text-warning small"></i>
+                                    <i class="fa-solid fa-star text-warning small"></i>
+                                    <i class="fa-solid fa-star text-warning small"></i>
+                                </div>
+                                <h6 class="fw-bold">$75.00</h6>
+                            </div>
+                            <button class="btn btn-sm text-orange p-0 add-to-cart" 
+                                    data-id="6"
+                                    data-name="Diamond Cluster Pendant Necklace"
+                                    data-price="75.00"
+                                    data-image="img/WhatsApp Image 2025-11-02 at 7.30.57 PM (1).jpeg"
+                                    data-color="Necklace">
+                                <i class="fa-solid fa-cart-arrow-down fs-4"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product 12 -->
+            <div class="col mt-4">
+                <div class="card card-box h-100 border-1 product-card">
+                    <div style="height: 190px; overflow: hidden; background: #f7f7f7;">
+                        <img src="img/WhatsApp Image 2025-11-02 at 7.30.57 PM.jpeg" class="w-100 h-100" style="object-fit: cover;" alt="Bracelet">
+                    </div>
+                    <div class="card-body py-2 px-3 d-flex flex-column">
+                        <h6 class="card-title mb-1" style="height: 40px; overflow: hidden; line-height: 1.1rem;">
+                            Minimalist Love Heart Stainless Steel Necklace
+                        </h6>
+                        <div class="d-flex justify-content-between align-items-center mt-0">
+                            <div>
+                                <div class="mb-1">
+                                    <i class="fa-solid fa-star text-warning small"></i>
+                                    <i class="fa-solid fa-star text-warning small"></i>
+                                    <i class="fa-solid fa-star text-warning small"></i>
+                                    <i class="fa-solid fa-star text-warning small"></i>
+                                    <i class="fa-solid fa-star text-warning small"></i>
+                                </div>
+                                <h6 class="fw-bold">$90.00</h6>
+                            </div>
+                            <button class="btn btn-sm text-orange p-0 add-to-cart" 
+                                    data-id="7"
+                                    data-name="Minimalist Love Heart Stainless Steel Necklace"
+                                    data-price="90.00"
+                                    data-image="img/WhatsApp Image 2025-11-02 at 7.30.57 PM.jpeg"
+                                    data-color="Silver">
+                                <i class="fa-solid fa-cart-arrow-down fs-4"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product 13 -->
+            <div class="col mt-4">
+                <div class="card card-box h-100 border-1 product-card">
+                    <div style="height: 190px; overflow: hidden; background: #f7f7f7;">
+                        <img src="img/WhatsApp Image 2025-11-02 at 7.34.02 PM (1).jpeg" class="w-100 h-100" style="object-fit: cover;" alt="Ring">
+                    </div>
+                    <div class="card-body py-2 px-3 d-flex flex-column">
+                        <h6 class="card-title mb-1" style="height: 40px; overflow: hidden; line-height: 1.1rem;">
+                            Bloom Flower Stainless Steel Necklace
+                        </h6>
+                        <div class="d-flex justify-content-between align-items-center mt-0">
+                            <div>
+                                <div class="mb-1">
+                                    <i class="fa-solid fa-star text-warning small"></i>
+                                    <i class="fa-solid fa-star text-warning small"></i>
+                                    <i class="fa-solid fa-star text-warning small"></i>
+                                    <i class="fa-solid fa-star text-warning small"></i>
+                                    <i class="fa-solid fa-star text-warning small"></i>
+                                </div>
+                                <h6 class="fw-bold">$200.00</h6>
+                            </div>
+                            <button class="btn btn-sm text-orange p-0 add-to-cart" 
+                                    data-id="8"
+                                    data-name="Bloom Flower Stainless Steel Necklace"
+                                    data-price="200.00"
+                                    data-image="img/WhatsApp Image 2025-11-02 at 7.34.02 PM (1).jpeg"
+                                    data-color="Platinum">
+                                <i class="fa-solid fa-cart-arrow-down fs-4"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product 14 -->
+            <div class="col mt-4">
+                <div class="card card-box h-100 border-1 product-card">
+                    <div style="height: 190px; overflow: hidden; background: #f7f7f7;">
+                        <img src="img/WhatsApp Image 2025-11-02 at 7.34.02 PM.jpeg" class="w-100 h-100" style="object-fit: cover;" alt="Earrings">
                     </div>
                     <div class="card-body py-2 px-3 d-flex flex-column">
                         <h6 class="card-title mb-1" style="height: 40px; overflow: hidden; line-height: 1.1rem;">
@@ -335,15 +515,15 @@
                 </div>
             </div>
             
-            <!-- Product 10 -->
+            <!-- Product 15 -->
             <div class="col mt-4">
                 <div class="card card-box h-100 border-1 product-card">
                     <div style="height: 190px; overflow: hidden; background: #f7f7f7;">
-                        <img src="img/necklace2.jpeg" class="w-100 h-100" style="object-fit: cover;" alt="Necklace">
+                        <img src="img/WhatsApp Image 2025-11-02 at 7.34.03 PM.jpeg" class="w-100 h-100" style="object-fit: cover;" alt="Necklace">
                     </div>
                     <div class="card-body py-2 px-3 d-flex flex-column">
                         <h6 class="card-title mb-1" style="height: 40px; overflow: hidden; line-height: 1.1rem;">
-                            Rose Gold Pendant Necklace
+                            Heart Asthetic Necklace Pendant
                         </h6>
                         <div class="d-flex justify-content-between align-items-center mt-0">
                             <div>
@@ -354,14 +534,14 @@
                                     <i class="fa-solid fa-star text-warning small"></i>
                                     <i class="fa-solid fa-star text-warning small"></i>
                                 </div>
-                                <h6 class="fw-bold">$135.00</h6>
+                                <h6 class="fw-bold">$100.00</h6>
                             </div>
                             <button class="btn btn-sm text-orange p-0 add-to-cart" 
                                     data-id="10"
-                                    data-name="Rose Gold Pendant Necklace"
-                                    data-price="135.00"
-                                    data-image="img/necklace2.jpeg"
-                                    data-color="Rose Gold">
+                                    data-name=" Heart Asthetic Necklace Pendant"
+                                    data-price="100.00"
+                                    data-image="img/WhatsApp Image 2025-11-02 at 7.34.03 PM.jpeg"
+                                    data-color="Gold Color">
                                 <i class="fa-solid fa-cart-arrow-down fs-4"></i>
                             </button>
                         </div>
@@ -369,6 +549,8 @@
                 </div>
             </div>
         </div>
+        </div>
+        
     </section>
 
     <footer class="bg-background-color text-light pt-5 mt-5">
@@ -414,7 +596,7 @@
                     <div class="mt-3">
                         <img src="img/esewa.png" alt="Visa" class="me-2" style="height:40px;">
                         <img src="img/khalti.png" alt="Mastercard" class="me-2" style="height:30px;">
-                        <img src="img/payments/paypal.png" alt="PayPal" style="height:30px;">
+                       
                     </div>
                 </div>
             </div>
