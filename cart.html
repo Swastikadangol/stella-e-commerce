@@ -78,6 +78,34 @@
         .StripeElement--webkit-autofill {
             background-color: #fefde5 !important;
         }
+        
+        /* Loading Spinner */
+        .payment-loading {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.7);
+            z-index: 9999;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #088178;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
     </style>
 </head>
 <body>
@@ -186,6 +214,12 @@
                     <!-- Stripe Payment Form (Hidden by default) -->
                     <div id="stripePaymentForm" style="display: none;">
                         <form id="payment-form">
+                            <!-- Add Cardholder Name Field -->
+                            <div class="mb-3">
+                                <label for="cardholder-name" class="form-label">Cardholder Name</label>
+                                <input type="text" id="cardholder-name" class="form-control" placeholder="Name on card" required>
+                            </div>
+                            
                             <div id="card-element">
                                 <!-- Stripe Card Element will be inserted here -->
                             </div>
@@ -205,6 +239,11 @@
             </div>
         </div>
     </main>
+
+    <!-- Loading Overlay -->
+    <div class="payment-loading" id="paymentLoading">
+        <div class="spinner"></div>
+    </div>
 
     <!-- Simple Payment Modal -->
     <div class="modal fade" id="paymentModal" tabindex="-1">
@@ -480,7 +519,7 @@
             showSuccess(orderId, totalAmount);
         }
         
-        // Stripe Payment Processing
+        // Stripe Payment Processing - FIXED VERSION
         document.getElementById('payment-form')?.addEventListener('submit', async function(event) {
             event.preventDefault();
             
@@ -494,40 +533,32 @@
             const amountInCents = Math.round(totalAmount * 100); // Convert to cents
             const orderId = 'STL-' + Date.now().toString().slice(-6);
             
+            // Show loading
+            document.getElementById('paymentLoading').style.display = 'flex';
+            
             // Disable submit button
             const submitButton = document.getElementById('submit-payment');
             submitButton.disabled = true;
             submitButton.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Processing...';
             
-            // Create payment intent on your backend
             try {
-                // NOTE: You need to create a backend endpoint to create a Payment Intent
-                // For now, we'll simulate it
+                // Since you don't have a backend, we'll use Stripe.createToken() instead
+                // This creates a token that can be used later when you add a backend
                 
-                // This is where you would call your backend
-                // const response = await fetch('/create-payment-intent', {
-                //     method: 'POST',
-                //     headers: { 'Content-Type': 'application/json' },
-                //     body: JSON.stringify({ 
-                //         amount: amountInCents,
-                //         currency: 'usd',
-                //         orderId: orderId
-                //     })
-                // });
-                // const { clientSecret } = await response.json();
+                const cardholderName = document.getElementById('cardholder-name').value;
                 
-                // For testing without a backend, we'll create a mock client secret
-                // In production, you MUST use a backend server
-                const mockClientSecret = 'pi_mock_secret_' + orderId;
+                if (!cardholderName.trim()) {
+                    throw new Error('Please enter cardholder name');
+                }
                 
-                // Confirm payment with Stripe
-                const result = await stripe.confirmCardPayment(mockClientSecret, {
-                    payment_method: {
-                        card: cardElement,
-                        billing_details: {
-                            name: document.getElementById('cardholder-name')?.value || 'Customer'
-                        }
-                    }
+                // Create a payment token
+                const result = await stripe.createToken(cardElement, {
+                    name: cardholderName,
+                    address_line1: '123 Main St', // You can add address fields if needed
+                    address_city: 'City',
+                    address_state: 'State',
+                    address_zip: '12345',
+                    address_country: 'US'
                 });
                 
                 if (result.error) {
@@ -535,17 +566,29 @@
                     document.getElementById('card-errors').textContent = result.error.message;
                     submitButton.disabled = false;
                     submitButton.innerHTML = '<i class="fas fa-credit-card me-2"></i>Pay with Card';
+                    document.getElementById('paymentLoading').style.display = 'none';
                 } else {
-                    // Payment successful
-                    if (result.paymentIntent.status === 'succeeded') {
-                        showSuccess(orderId, totalAmount);
-                    }
+                    // Token created successfully
+                    console.log('Token created:', result.token.id);
+                    
+                    // In a real implementation, you would send this token to your backend
+                    // For now, we'll simulate a successful payment
+                    
+                    // Simulate API call delay
+                    await new Promise(resolve => setTimeout(resolve, 1500));
+                    
+                    // Show success
+                    showSuccess(orderId, totalAmount);
+                    
+                    // Hide loading
+                    document.getElementById('paymentLoading').style.display = 'none';
                 }
             } catch (error) {
                 console.error('Payment error:', error);
                 document.getElementById('card-errors').textContent = 'Payment failed. Please try again.';
                 submitButton.disabled = false;
                 submitButton.innerHTML = '<i class="fas fa-credit-card me-2"></i>Pay with Card';
+                document.getElementById('paymentLoading').style.display = 'none';
             }
         });
         
@@ -578,6 +621,16 @@
             const orders = JSON.parse(localStorage.getItem('stella_orders') || '[]');
             orders.push(order);
             localStorage.setItem('stella_orders', JSON.stringify(orders));
+            
+            // Clear card form
+            cardElement.clear();
+            document.getElementById('cardholder-name').value = '';
+            document.getElementById('card-errors').textContent = '';
+            
+            // Re-enable button
+            const submitButton = document.getElementById('submit-payment');
+            submitButton.disabled = false;
+            submitButton.innerHTML = '<i class="fas fa-credit-card me-2"></i>Pay with Card';
         }
         
         // Setup event listeners
@@ -613,8 +666,14 @@
                 selectPayment('stripe');
             }
         }, 100);
+        
+        // Test instructions
+        console.log('=== STRIPE TEST MODE ===');
+        console.log('Use this test card: 4242 4242 4242 4242');
+        console.log('Expiry: Any future date (e.g., 12/30)');
+        console.log('CVC: Any 3 digits (e.g., 123)');
+        console.log('ZIP: Any 5 digits');
     </script>
-    <script src="https://js.stripe.com/v3/"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
