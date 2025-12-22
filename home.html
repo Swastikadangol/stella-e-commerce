@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg px-4 shadow sticky-top bg-background-color" id="header">
+        <a class="navbar-brand" href="home.html"><img src="img/logo-removebg-preview.png" class="logo" alt=""></a>
+
+        <ul class="navbar-nav ms-auto ">
+            <li class="nav-item pe-4">
+                <a class="nav-link active text-dark" href="home.html">Home</a>
+            </li>
+            <li class="nav-item pe-4">
+                <a class="nav-link text-dark" href="shop.html">Shop</a>
+            </li>
+            <li class="nav-item pe-4">
+                <a class="nav-link text-dark" href="#about_us">About</a>
+            </li>
+            <li class="nav-item pe-4">
+                <a class="nav-link text-dark" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </li>
+        </ul>
+
+    </nav>
+    <section id="hero" class=" bg-background-color py-4 px-5">
+        <div class="row align-items-center">
+
+            <!-- Left Text Section -->
+            <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
+
+
+                <h5>Trade-in-Offer</h5>
+                <h2 class="mb-0">Super value deals</h2>
+                <h1 class="text-color ">On all products</h1>
+                <p class="text-muted">Save more with coupons & upto 30% discount</p>
+                <button class="btn btn-style btn-lg ">Shop Now</button>
+
+
+            </div>
+
+            <!-- Right Image Section -->
+            <div class="col-md-6 text-center">
+                <img src="img/sale upto 30.jpeg" alt="Sale up to 30%" class="img-fluid rounded shadow-sm" id="hero_img"
+                    style="width: 90%;">
+            </div>
+
+        </div>
+    </section>
+
+    <section class="container py-5">
+        <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4 text-center">
+
+            <div class="col">
+                <div class="card card-box h-100 py-3">
+                    <div class="card-body">
+                        <img src="img/easy shopping.png" alt="Online Shopping" class="img-fluid mb-3">
+                        <h6 class="bg-pink text-success fw-semibold mt-2 py-2 rounded">Online Shopping</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card card-box h-100">
+                    <div class="card-body mt-4">
+                        <img src="img/free shipping.png" alt="Free Shipping" class="img-fluid mb-2">
+                        <h6 class="bg-pink text-success fw-semibold py-2 rounded">Free Shipping</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 card-box">
+                    <div class="card-body">
+                        <img src="img/promotion.jpg" alt="Promotion" class="img-fluid mb-3">
+                        <h6 class="bg-pink text-success fw-semibold py-2 rounded">Promotion</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card card-box h-100">
+                    <div class="card-body">
+                        <img src="img/save money.png" alt="Save Money" class="img-fluid mb-3">
+                        <h6 class="bg-pink text-success fw-semibold py-2 rounded">Save Money</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card card-box h-100">
+                    <div class="card-body">
+                        <img src="img/save time.png" alt="Same Time" class="img-fluid mb-3">
+                        <h6 class="bg-pink text-success fw-semibold py-2 rounded">Same Time</h6>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="container py-3">
+        <h3 class="text-color mb-3">Featured Product</h3>
+        <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-3">
+
+            <div class="col mt-4">
+                <div class="card  card-box h-100 border-1  product-card">
+
+                    <!-- Image -->
+                    <div style="height: 190px; overflow: hidden; background: #f7f7f7;">
+                        <img src="img/earrings.jpeg" class="w-100 h-100" style="object-fit: cover;" alt="Classic geometric earrings">
+                    </div>
+
+                    <!-- Card Body -->
+                    <div class="card-body py-2 px-3 d-flex flex-column">
+
+                        <!-- Product Title -->
+                        <h6 class="card-title mb-1" style="height: 40px; overflow: hidden; line-height: 1.1rem;">
+                             Gold Oval Hoop Earrings
+                        </h6>
+
+                        <div class="d-flex justify-content-between align-items-center mt-0">
+                            <div>
+                                <div class="mb-1">
+                                    <i class="fa-solid fa-star text-warning small"></i>
+                                    <i class="fa-solid fa-star text-warning small"></i>
+                                    <i class="fa-solid fa-star text-warning small"></i>
+                                    <i class="fa-solid fa-star text-warning small"></i>
+                                    <i class="fa-solid fa-star text-warning small"></i>
+                                </div>
+                                <h6 class="fw-bold">$95.00</h6>
+                            </div>
+                            <i class="fa-solid fa-cart-arrow-down fs-4  text-orange "></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col mt-4">
+                <div class="card  card-box h-100 border-1  product-card">
+
+                    <!-- Image -->
+                    <div style="height: 190px; overflow: hidden; background: #f7f7f7;">
+                        <img src="img/necklace.jpeg" class="w-100 h-100" style="object-fit: cover;" alt="Classic geometric earrings">
+                    </div>
+
+                    <!-- Card Body -->
+                    <div class="card-body py-2 px-3 d-flex flex-column">
+
+                        <!-- Product Title -->
+                        <h6 class="card-title mb-1" style="height: 40px; overflow: hidden; line-height: 1.1rem;">
+                           Long Heart Shaped Pendant Necklace
+                        </h6>
+
+                        <div class="d-flex justify-content-between align-items-center mt-0">
+                            <div>
+                                <div class="mb-1">
+                                    <i class="fa-solid fa-star text-warning small"></i>
+                                    <i class="fa-solid fa-star text-warning small"></i>
+                                    <i class="fa-solid fa-star text-warning small"></i>
+                                    <i class="fa-solid fa-star text-warning small"></i>
+                                    <i class="fa-solid fa-star text-warning small"></i>
+                                </div>
+                                <h6 class="fw-bold">$80.00</h6>
+                            </div>
+                            <i class="fa-solid fa-cart-arrow-down fs-4  text-orange "></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <div class="col mt-4">
+                <div class="card  card-box h-100 border-1  product-card">
+
+                    <!-- Image -->
+                    <div style="height: 190px; overflow: hidden; background: #f7f7f7;">
+                        <img src="img/earrings2.jpeg" class="w-100 h-100" style="object-fit: cover;" alt="Classic geometric earrings">
+                    </div>
+
+                    <!-- Card Body -->
+                    <div class="card-body py-2 px-3 d-flex flex-column">
+
+                        <!-- Product Title -->
+                        <h6 class="card-title mb-1" style="height: 40px; overflow: hidden; line-height: 1.1rem;">
+                            Sterling Silver Fashion Star Cuff Earring Chain
+                        </h6>
+
+                        <div class="d-flex justify-content-between align-items-center mt-0">
+                            <div>
+                                <div class="mb-1">
+                                    <i class="fa-solid fa-star text-warning small"></i>
+                                    <i class="fa-solid fa-star text-warning small"></i>
+                                    <i class="fa-solid fa-star text-warning small"></i>
+                                    <i class="fa-solid fa-star text-warning small"></i>
+                                    <i class="fa-solid fa-star text-warning small"></i>
+                                </div>
+                                <h6 class="fw-bold">$65.00</h6>
+                            </div>
+                            <i class="fa-solid fa-cart-arrow-down fs-4  text-orange "></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <div class="col mt-4">
+                <div class="card  card-box h-100 border-1  product-card">
+
+                    <!-- Image -->
+                    <div style="height: 190px; overflow: hidden; background: #f7f7f7;">
+                        <img src="img/necklace1.jpeg" class="w-100 h-100" style="object-fit: cover;" alt="Classic geometric earrings">
+                    </div>
+
+                    <!-- Card Body -->
+                    <div class="card-body py-2 px-3 d-flex flex-column">
+
+                        <!-- Product Title -->
+                        <h6 class="card-title mb-1" style="height: 40px; overflow: hidden; line-height: 1.1rem;">
+                            Sea Shell Locket Necklace with Pearl
+                        </h6>
+
+                        <div class="d-flex justify-content-between align-items-center mt-0">
+                            <div>
+                                <div class="mb-1">
+                                    <i class="fa-solid fa-star text-warning small"></i>
+                                    <i class="fa-solid fa-star text-warning small"></i>
+                                    <i class="fa-solid fa-star text-warning small"></i>
+                                    <i class="fa-solid fa-star text-warning small"></i>
+                                    <i class="fa-solid fa-star text-warning small"></i>
+                                </div>
+                                <h6 class="fw-bold">$80</h6>
+                            </div>
+                            <i class="fa-solid fa-cart-arrow-down fs-4  text-orange "></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+             <div class="col mt-4">
+                <div class="card  card-box h-100 border-1  product-card">
+
+                    <!-- Image -->
+                    <div style="height: 190px; overflow: hidden; background: #f7f7f7;">
+                        <img src="img/earrings1.jpeg" class="w-100 h-100" style="object-fit: cover;" alt="Classic geometric earrings">
+                    </div>
+
+                    <!-- Card Body -->
+                    <div class="card-body py-2 px-3 d-flex flex-column">
+
+                        <!-- Product Title -->
+                        <h6 class="card-title mb-1" style="height: 40px; overflow: hidden; line-height: 1.1rem;">
+                           Gentle Wind Style Pom Pom Earrings
+                        </h6>
+
+                        <div class="d-flex justify-content-between align-items-center mt-0">
+                            <div>
+                                <div class="mb-1">
+                                    <i class="fa-solid fa-star text-warning small"></i>
+                                    <i class="fa-solid fa-star text-warning small"></i>
+                                    <i class="fa-solid fa-star text-warning small"></i>
+                                    <i class="fa-solid fa-star text-warning small"></i>
+                                    <i class="fa-solid fa-star text-warning small"></i>
+                                </div>
+                                <h6 class="fw-bold">$50.00</h6>
+                            </div>
+                            <i class="fa-solid fa-cart-arrow-down fs-4  text-orange "></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+           
+        </div>
+    </section>
+
+
+<section id="about_us" class="container py-5">
+    <!-- Section Heading -->
+    <div class="text-center mb-5">
+        <h2 class="fw-bold text-color">About Us</h2>
+        <p class="text-muted mx-auto" style="max-width: 700px;">
+            Learn about our journey and how we bring beautiful, high-quality jewellery to everyone.
+        </p>
+    </div>
+
+    <div class="row align-items-center">
+        <!-- Founder Image -->
+        <div class="col-md-5 text-center mb-4 mb-md-0">
+            <img src="img/hero img.png" alt="Founder" class="img-fluid shadow-sm" style="height: 64vh; width: auto;" >
+        </div>
+
+        <!-- Text Content -->
+        <div class="col-md-7">
+             <h5 class="fw-semibold mb-3 text-pink">Our Story</h5>
+            <p class="text-muted" style="text-align: justify;">
+                Stella Jewellers  is a small, student-run online jewellery store dedicated to bringing you beautiful, high-quality pieces at affordable prices. We carefully source our jewellery from trusted wholesalers to offer a wide range of rings, earrings, necklaces, and bracelets that suit every style and occasion.
+            </p>
+            <p class="text-muted" style="text-align: justify;">
+                Our goal is to make shopping for jewellery easy, convenient, and enjoyable. Whether you’re treating yourself, buying a gift, or looking for something special, we focus on providing quality products with fast, reliable service.
+            </p>
+            <p class="text-muted" style="text-align: justify;">
+                As a student-led business, we value honesty, trust, and customer satisfaction. Every order is handled with care, and we strive to make your online shopping experience seamless and memorable. Thank you for supporting our small venture – together, we’re helping everyone add a touch of sparkle to their lives!
+            </p>
+        </div>
+    </div>
+</section>
+
+
+
+<footer class="bg-background-color text-light pt-5 mt-5">
+    <div class="container">
+        <div class="row">
+
+            <!-- Brand Info -->
+            <div class="col-12 col-md-4 mb-4">
+                <h5 class="fw-bold text-pink" style="letter-spacing: 1px;">Stella Jewellers</h5>
+                <p class="small">Discover timeless elegance with our collection of rings, earrings, necklaces, and bracelets crafted with precision and passion.</p>
+                <p class="mb-0">&copy; 2025 Stella Jewellers. All rights reserved.</p>
+            </div>
+
+            <!-- Customer Service -->
+            <div class="col-6 col-md-2 mb-4">
+                <h6 class="fw-bold text-color">Customer Service</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-secondary text-decoration-none">Help Center</a></li>
+                    <li><a href="#" class="text-secondary text-decoration-none">Returns</a></li>
+                    <li><a href="#" class="text-secondary text-decoration-none">Shipping Info</a></li>
+                    <li><a href="#" class="text-secondary text-decoration-none">Track Order</a></li>
+                </ul>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-6 col-md-2 mb-4">
+                <h6 class="fw-bold text-color">Quick Links</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-secondary text-decoration-none">About Us</a></li>
+                    <li><a href="#" class="text-secondary text-decoration-none">Contact</a></li>
+                    <li><a href="#" class="text-secondary text-decoration-none">Blog</a></li>
+                    <li><a href="#" class="text-secondary text-decoration-none">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter & Social -->
+            <div class="col-12 col-md-4 mb-4">
+                <h6 class="fw-bold text-color">Stay in Touch</h6>
+                <p class="small">Sign up to receive updates on new collections, offers, and exclusive discounts.</p>
+                <form class="d-flex mb-3">
+                    <input type="email" class="form-control me-2" placeholder="Enter your email">
+                    <button type="submit" class="btn btn-warning">Subscribe</button>
+                </form>
+
+                <!-- Social Icons -->
+                <div>
+                    <a href="#" class="text-color me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="https://www.instagram.com/stellaa_jewels?igsh=MTI3N21ybGR0amIyaA==" class="text-color me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="#" class="text-color me-3"><i class="fab fa-pinterest fa-lg"></i></a>
+                    <a href="#" class="text-color"><i class="fab fa-twitter fa-lg"></i></a>
+                </div>
+
+                <!-- Payment Options -->
+                <div class="mt-3">
+                    <img src="img/esewa.png" alt="Visa" class="me-2" style="height:40px;">
+                    <img src="img/khalti.png" alt="Mastercard" class="me-2" style="height:30px;">
+                   
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+<!-- Toast Notification -->
+ <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+        <div id="addToCartToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <i class="fas fa-check-circle text-success me-2"></i>
+                <strong class="me-auto">Success!</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Item added to cart successfully!
+            </div>
+        </div>
+    </div>
+<script>
+    // Cart Management System
+    const CART_STORAGE_KEY = 'stella_jewellers_cart';
+    
+    // Initialize cart functionality
+    document.addEventListener('DOMContentLoaded', function() {
+        setupAddToCartButtons();
+        updateCartCounter();
+    });
+    
+    // Update cart counter in navigation
+    function updateCartCounter() {
+        const cart = getCart();
+        const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+        const cartCountElement = document.getElementById('cartCount');
+        if (cartCountElement) {
+            cartCountElement.textContent = totalItems;
+        }
+    }
+    
+    // Get current cart from localStorage
+    function getCart() {
+        return JSON.parse(localStorage.getItem(CART_STORAGE_KEY)) || [];
+    }
+    
+    // Save cart to localStorage
+    function saveCart(cart) {
+        localStorage.setItem(CART_STORAGE_KEY, JSON.stringify(cart));
+        updateCartCounter();
+    }
+    
+    // Add item to cart
+    function addToCart(product) {
+        const cart = getCart();
+        
+        // Check if product already exists in cart
+        const existingItemIndex = cart.findIndex(item => item.id === product.id);
+        
+        if (existingItemIndex !== -1) {
+            // Update quantity if product exists
+            cart[existingItemIndex].quantity += 1;
+        } else {
+            // Add new product to cart
+            cart.push({
+                ...product,
+                quantity: 1
+            });
+        }
+        
+        saveCart(cart);
+        showAddToCartNotification(product.name);
+    }
+    
+    // Show toast notification when item is added to cart (YOUR FUNCTION)
+    function showAddToCartNotification(productName) {
+        const toastEl = document.getElementById('addToCartToast');
+        if (toastEl) {
+            // Update the toast message
+            const toastBody = toastEl.querySelector('.toast-body');
+            if (toastBody) {
+                toastBody.textContent = `${productName} added to cart!`;
+            }
+            
+            // Show the toast
+            const toast = new bootstrap.Toast(toastEl);
+            toast.show();
+        } else {
+            // Fallback if toast element doesn't exist
+            alert(`${productName} added to cart!`);
+        }
+    }
+    
+    // Setup all "Add to Cart" buttons
+    function setupAddToCartButtons() {
+        // Get all product cards
+        const productCards = document.querySelectorAll('.product-card');
+        
+        productCards.forEach((card, index) => {
+            // Get product details from the card
+            const titleElement = card.querySelector('.card-title');
+            const priceElement = card.querySelector('.fw-bold');
+            const imageElement = card.querySelector('img');
+            const cartIcon = card.querySelector('.fa-cart-arrow-down');
+            
+            if (titleElement && priceElement && imageElement && cartIcon) {
+                // Create product object
+                const product = {
+                    id: `product-${index + 1}`,
+                    name: titleElement.textContent.trim(),
+                    price: parseFloat(priceElement.textContent.replace('$', '')),
+                    image: imageElement.src,
+                    color: 'Default'
+                };
+                
+                // Add click event to cart icon
+                cartIcon.style.cursor = 'pointer';
+                cartIcon.title = 'Add to Cart';
+                
+                cartIcon.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation(); // Prevent card click event
+                    addToCart(product);
+                    
+                    // Add visual feedback
+                    this.style.transform = 'scale(1.2)';
+                    this.style.color = '#088178';
+                    setTimeout(() => {
+                        this.style.transform = 'scale(1)';
+                        this.style.color = 'orangered';
+                    }, 300);
+                });
+            }
+        });
+        
+        // Add CSS for cart icon hover effect
+        const style = document.createElement('style');
+        style.textContent = `
+            .fa-cart-arrow-down {
+                transition: all 0.3s ease;
+            }
+            
+            .fa-cart-arrow-down:hover {
+                transform: scale(1.1);
+            }
+        `;
+        document.head.appendChild(style);
+    }
+    
+    // Add event listener to the "Shop Now" button in hero section
+    document.querySelector('.btn-style')?.addEventListener('click', function() {
+        window.location.href = 'shop.html';
+    });
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
